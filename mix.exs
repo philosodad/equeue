@@ -23,8 +23,7 @@ defmodule Equeue.Mixfile do
   # { :barbat, "~> 0.1", github: "elixir-lang/barbat" }
   defp deps do
     [
-      {:phoenix, "0.3.1"},
-      {:cowboy, "~> 0.10.0", github: "extend/cowboy", optional: true}
+	{:phoenix, github: "phoenixframework/phoenix"}
     ]
   end
 end
