@@ -4,7 +4,7 @@ defmodule Equeue.Mixfile do
   def project do
     [ app: :equeue,
       version: "0.0.1",
-      elixir: "~> 0.14.3",
+      elixir: "~> 0.14.2",
       deps: deps ]
   end
 
@@ -23,7 +23,8 @@ defmodule Equeue.Mixfile do
   # { :barbat, "~> 0.1", github: "elixir-lang/barbat" }
   defp deps do
     [
-	{:phoenix, github: "phoenixframework/phoenix"}
+      {:phoenix, "0.3.1"},
+      {:cowboy, "~> 0.10.0", github: "extend/cowboy", optional: true}
     ]
   end
 end
